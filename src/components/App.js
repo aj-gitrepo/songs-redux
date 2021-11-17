@@ -1,11 +1,18 @@
 import React from 'react';
 import SongList from './SongList';
-import { selectSong } from '../actions'; //named export
+import SongDetail from './SongDetail';
 
 const App = () => {
   return (
-    <div>
-      <SongList />
+    <div className="ui container grid" style={{justifyContent: "center"}}>
+      <div className="ui row">
+        <div className="column eight wide">
+          <SongList />
+        </div>
+        <div className="column eight wide">
+          <SongDetail />
+        </div>
+      </div>
     </div>
   );
 }
